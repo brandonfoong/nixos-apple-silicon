@@ -26,8 +26,8 @@ let
       src = fetchFromGitHub {
         owner = "AsahiLinux";
         repo = "linux";
-        tag = "asahi-6.19.11-3";
-        hash = "sha256-4G/lUZS0PnOp6OuInpEFRt8yCYiQ/SDx49/JVtYxMYo=";
+        rev = "4e84610e5722c34e48fef3f33f7bd8faedb13348";
+        hash = "sha256-G32SzJW1paAUaBCnw5cou20WwpuVR8OZSDRpV58IUJU=";
       };
 
       kernelPatches = [
@@ -52,6 +52,8 @@ let
 
             APPLE_PMGR_MISC = yes;
             APPLE_PMGR_PWRSTATE = yes;
+
+            LOCALVERSION = freeform "-fairydust";
           };
           features.rust = true;
         }
