@@ -19,7 +19,7 @@ let
       inherit stdenv lib;
 
       pname = "linux-asahi";
-      version = "6.19.11";
+      version = "6.19.11-fairydust";
       modDirVersion = version;
       extraMeta.branch = "6.19";
 
